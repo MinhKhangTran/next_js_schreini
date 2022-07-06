@@ -1,11 +1,19 @@
-export default function Home() {
+import Hero from "../components/hero";
+import { getJsonData } from "../utils/tool";
+
+export default function Home({ data }) {
   return (
     <>
-      <h1>Homepage</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam,
-        incidunt!
-      </p>
+      <Hero data={data.carrousel} />
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const data = await getJsonData();
+  return {
+    props: {
+      data: data,
+    },
+  };
+};

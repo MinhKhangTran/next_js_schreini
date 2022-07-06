@@ -1,0 +1,40 @@
+@use "sass:math";
+
+#hero {
+  @include md {
+    min-height: calc(100vh - 64px);
+  }
+  .carousel {
+    @include md {
+      height: calc(100vh - 64px);
+    }
+  }
+  .carousel-item {
+    height: 100%;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-caption {
+    @include lg {
+      bottom: 50%;
+      left: 10%;
+      right: auto;
+      padding: 2rem;
+      transform: translateY(50%);
+      text-align: left;
+      width: 620px;
+      background: radial-gradient(
+          91.17% 582.95% at 4.86% 8.4%,
+          rgba(255, 255, 255, 0.9) 0%,
+          rgba(255, 255, 255, 0.5) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      border: 1px solid #ffffff;
+      backdrop-filter: blur(28px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 6px;
+    }
+  }
+}
