@@ -1,0 +1,13 @@
+@use "sass:math";
+
+.navbar {
+  .nav-link {
+    color: $dark;
+  }
+  &-nav {
+    gap: math.div(16rem, 16);
+    @include lg {
+      gap: math.div(48rem, 16);
+    }
+  }
+}

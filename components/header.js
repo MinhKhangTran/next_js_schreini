@@ -9,6 +9,8 @@ const Header = () => {
           <Link href="/">
             <a className="navbar-brand">
               <svg
+                aria-label="
+              logo von Schreini"
                 width="134"
                 height="38"
                 viewBox="0 0 134 38"

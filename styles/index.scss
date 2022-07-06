@@ -20,6 +20,9 @@ $font-family-base: "Poppins", sans-serif;
 // links
 
 //navbar
+$navbar-light-color: rgba($dark, 0.85);
+$navbar-light-hover-color: rgba($dark, 0.95);
+$navbar-light-active-color: rgba($dark, 1);
 
 // import variables and mixins files (so you can use them below)
 // any redefined vars above will be incorporated into the files (e.g. in maps)
@@ -38,3 +41,4 @@ $font-family-base: "Poppins", sans-serif;
 
 // components
 @import "components/wrapper";
+@import "components/navbar";
