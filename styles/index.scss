@@ -1,0 +1,40 @@
+// load custom font from google fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+
+@import "~bootstrap/scss/functions";
+// redefine variables not dependent on anything else
+
+// global variables
+$primary: #c2410c;
+$secondary: #fa944e;
+$light: #f97316;
+$dark: #7c2d12;
+$info: #e0e0e0;
+
+// theme color variables
+
+// font family
+$headings-font-family: "Lato", sans-serif;
+$font-family-base: "Poppins", sans-serif;
+
+// links
+
+//navbar
+
+// import variables and mixins files (so you can use them below)
+// any redefined vars above will be incorporated into the files (e.g. in maps)
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// utility api - import utility file first
+// import bootstrap whole sass lib (incorporates all above redefined vars & values)
+@import "~bootstrap/scss/bootstrap";
+
+// import a11y and global
+@import "breakpoints";
+@import "a11y";
+@import "global";
+@import "typography";
+
+// components
+@import "components/wrapper";
