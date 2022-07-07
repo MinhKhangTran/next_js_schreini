@@ -1,0 +1,11 @@
+@use "sass:math";
+
+#ueber-uns {
+  padding-block: math.div(64rem, 16);
+  @include md {
+    padding-block: math.div(104rem, 16);
+  }
+  .second__text {
+    padding-block: 1rem;
+  }
+}
