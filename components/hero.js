@@ -1,13 +1,13 @@
-import { Carousel } from "react-bootstrap";
+import Link from "next/link";
+import { Button, Carousel } from "react-bootstrap";
 
 const Hero = ({ data }) => {
-  console.log(data);
   return (
     <section id="hero" aria-label="hero section">
       <Carousel>
         {data.map((slide) => {
           return (
-            <Carousel.Item key={slide.id} interval={1000000}>
+            <Carousel.Item key={slide.id} interval={5000}>
               <picture>
                 <img
                   className="img-fluid"
@@ -16,8 +16,11 @@ const Hero = ({ data }) => {
                 />
               </picture>
               <Carousel.Caption>
-                <h1 className="text-dark">{slide.title}</h1>
+                <h1 className="text-dark | heading-1">{slide.title}</h1>
                 <p className="text-dark">{slide.text}</p>
+                <Link href="/kontakt" passHref>
+                  <Button variant="primary">Jetzt kontaktieren</Button>
+                </Link>
               </Carousel.Caption>
             </Carousel.Item>
           );

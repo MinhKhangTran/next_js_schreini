@@ -1,9 +1,7 @@
 @use "sass:math";
-.banner__heading {
+.heading-1 {
   font-size: math.div(36rem, 16);
-  font-weight: 200;
-  line-height: normal;
-  font-family: "Archivo";
+
   @include md {
     font-size: math.div(40rem, 16);
   }
@@ -11,7 +9,7 @@
     font-size: math.div(48rem, 16);
   }
 }
-.heading-1 {
+.heading-2 {
   font-size: math.div(24rem, 16);
   font-weight: 400;
   @include md {
@@ -21,46 +19,23 @@
     font-size: math.div(40rem, 16);
   }
 }
-.heading-2 {
-  font-size: math.div(22rem, 16);
+.heading-3 {
+  font-size: math.div(24rem, 16);
   font-weight: 400;
   @include md {
-    font-size: math.div(30rem, 16);
+    font-size: math.div(28rem, 16);
   }
   @include lg {
-    font-size: math.div(36rem, 16);
+    font-size: math.div(32rem, 16);
   }
 }
-.heading-3 {
+.heading-4 {
   font-size: math.div(20rem, 16);
   font-weight: 400;
   @include md {
-    font-size: math.div(28rem, 16);
+    font-size: math.div(22rem, 16);
   }
   @include lg {
-    font-size: math.div(32rem, 16);
-  }
-}
-
-.cta-heading {
-  font-size: math.div(22rem, 16);
-  font-weight: 400;
-  @include md {
-    font-size: math.div(30rem, 16);
-  }
-  @include lg {
-    font-size: math.div(40rem, 16);
-  }
-}
-.banner__body {
-  font-size: math.div(22rem, 16);
-  font-weight: 200;
-  line-height: 150%;
-  font-family: "Archivo";
-  @include md {
-    font-size: math.div(28rem, 16);
-  }
-  @include lg {
-    font-size: math.div(32rem, 16);
+    font-size: math.div(34rem, 16);
   }
 }
