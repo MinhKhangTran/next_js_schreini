@@ -8,7 +8,9 @@ const UnsereLeistungen = ({ data }) => {
       aria-label="leistungen section"
       className="wrapper"
     >
-      <h2 className="heading-2 text-center text-primary">Unsere Leistungen</h2>
+      <h2 className="heading-2 text-center text-primary | pb-2">
+        Unsere Leistungen
+      </h2>
       <p className="text-center">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor.
@@ -17,7 +19,7 @@ const UnsereLeistungen = ({ data }) => {
         <Row>
           {data.map((leistung) => {
             return (
-              <Col key={leistung.id} md={4}>
+              <Col className="leistungen__grid--child" key={leistung.id} md={4}>
                 <Link href={`/leistungen/${leistung.slug}`}>
                   <div>
                     <picture>
@@ -27,11 +29,14 @@ const UnsereLeistungen = ({ data }) => {
                         alt={`${leistung.title}`}
                       />
                     </picture>
-                    <h3 className="heading-3 | text-primary">Innenbau</h3>
-                    <p className="text-center">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor.
-                    </p>
+
+                    <h3 className="heading-3 | text-center text-primary text-capitalize">
+                      <Link href={`/leistungen/${leistung.slug}`}>
+                        {leistung.title}
+                      </Link>
+                    </h3>
+
+                    <p className="text-center">{leistung.excerpt}</p>
                   </div>
                 </Link>
               </Col>

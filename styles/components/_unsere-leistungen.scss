@@ -1,0 +1,28 @@
+@use "sass:math";
+
+#leistungen {
+  .leistungen__grid {
+    &--child {
+      padding-inline: 0;
+      transition: 0.35s ease-in all;
+      padding-top: 2rem;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+          0 8px 10px -6px rgb(0 0 0 / 0.1);
+      }
+      h3 {
+        padding-block: 1rem;
+        @include md {
+          padding-block: 1.5rem 1rem;
+        }
+      }
+      p {
+        padding-bottom: 1rem;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
