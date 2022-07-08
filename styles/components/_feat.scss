@@ -1,0 +1,21 @@
+@use "sass:math";
+
+#feat {
+  padding-block: math.div(32rem, 16);
+  margin-top: math.div(64rem, 16);
+  @include md {
+    padding-block: math.div(64rem, 16);
+    margin-top: math.div(104rem, 16);
+  }
+  .feat__wrapper {
+    gap: 2rem;
+    @include md {
+      gap: 0rem;
+    }
+    &--child {
+      h2 {
+        padding-block: 2rem 1rem;
+      }
+    }
+  }
+}

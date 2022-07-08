@@ -1,0 +1,55 @@
+@use "sass:math";
+
+#social__proof {
+  min-height: 450px;
+  background-image: url(/images/homepage/cta.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include md {
+    min-height: 520px;
+  }
+  .carousel {
+    height: 450px;
+    @include md {
+      height: 520px;
+    }
+    &-caption {
+      position: initial;
+      width: 80%;
+      max-width: 750px;
+      margin-inline: auto;
+      p {
+        padding-block: 1rem;
+        @include md {
+          padding-block: 2rem;
+        }
+      }
+    }
+    &-inner {
+      height: 100%;
+    }
+    &-item {
+      height: 100%;
+      padding-block: 2rem;
+      @include md {
+        padding-block: auto;
+      }
+      .social__proof--child {
+        height: 100%;
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: auto;
+      @include md {
+        width: 8%;
+      }
+      @include lg {
+        width: 15%;
+      }
+    }
+  }
+}

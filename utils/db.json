@@ -142,7 +142,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 3,
       "thumb": "feinarbeit-1.jpg",
       "title": "feinarbeit",
       "excerpt": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
@@ -199,6 +199,26 @@
           "antwort": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. "
         }
       ]
+    }
+  ],
+  "feat": [
+    {
+      "id": 1,
+      "icon": "handwerker.svg",
+      "title": "Über 10 Jahre Erfahrung",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+    },
+    {
+      "id": 2,
+      "icon": "werkzeuge.svg",
+      "title": "Hoher Standard",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+    },
+    {
+      "id": 3,
+      "icon": "helm-und-schutzbrille.svg",
+      "title": "Sicherheit geht vor",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
     }
   ],
   "testimonial": [

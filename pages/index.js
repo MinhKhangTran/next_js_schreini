@@ -12,8 +12,8 @@ export default function Home({ data }) {
       <Hero data={data.carrousel} />
       <UeberUns />
       <UnsereLeistungen data={data.leistungen} />
-      <Feat />
-      <SocialProof />
+      <Feat data={data.feat} />
+      <SocialProof data={data.testimonial} />
       <ContactSm />
     </>
   );
