@@ -1,7 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 
 const Feat = ({ data }) => {
-  console.log(data);
   return (
     <section id="feat" aria-label="feat section" className="bg-info">
       <Row className="feat__wrapper wrapper">

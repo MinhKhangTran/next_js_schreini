@@ -244,6 +244,28 @@
       "text": "consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
     }
   ],
+  "kontakt": [
+    {
+      "id": 1,
+      "icon": "haus.svg",
+      "text": "Musterstraße 1 12345 Musterstadt"
+    },
+    {
+      "id": 2,
+      "icon": "phone.svg",
+      "text": "0123456789"
+    },
+    {
+      "id": 3,
+      "icon": "email.svg",
+      "text": "info@schreini.de"
+    },
+    {
+      "id": 4,
+      "icon": "uhr.svg",
+      "text": "Mo - Fr: 08:00 - 17:00"
+    }
+  ],
   "team": [
     {
       "id": 1,

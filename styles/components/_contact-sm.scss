@@ -1,0 +1,39 @@
+@use "sass:math";
+
+#contact-sm {
+  margin-top: math.div(64rem, 16);
+  @include md {
+    margin-top: math.div(104rem, 16);
+  }
+  .contact__row {
+    padding-top: 2rem;
+    gap: 2rem;
+    @include md {
+      gap: 0;
+    }
+  }
+  .contact__row--child {
+    gap: 2rem;
+    &-1,
+    &-2 {
+      @include md {
+        margin-bottom: 2rem;
+      }
+      @include lg {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .form__wrapper {
+    width: 100%;
+    max-width: 590px;
+    margin-inline: auto;
+    margin-top: math.div(48rem, 16);
+    @include md {
+      margin-top: math.div(80rem, 16);
+    }
+  }
+  .button__wrapper {
+    margin-top: 2rem;
+  }
+}

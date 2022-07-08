@@ -14,7 +14,7 @@ export default function Home({ data }) {
       <UnsereLeistungen data={data.leistungen} />
       <Feat data={data.feat} />
       <SocialProof data={data.testimonial} />
-      <ContactSm />
+      <ContactSm data={data.kontakt} />
     </>
   );
 }
