@@ -14,6 +14,7 @@ const SocialProof = ({ data }) => {
                     src="/images/homepage/quote.svg"
                     alt="quote icon"
                     aria-hidden="true"
+                    loading="lazy"
                   />
                 </picture>
                 <Carousel.Caption>

@@ -27,6 +27,7 @@ const UnsereLeistungen = ({ data }) => {
                         className="img-fluid"
                         src={`/images/homepage/${leistung.thumb}`}
                         alt={`${leistung.title}`}
+                        loading="lazy"
                       />
                     </picture>
 
