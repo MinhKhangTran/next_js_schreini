@@ -25,9 +25,18 @@ const Layout = (props) => {
       <main tabIndex="-1" id="main-content">
         {props.children}
       </main>
-      <Footer />
+      <Footer data={props.children.props.data.kontakt} />
     </>
   );
+};
+
+export const getStaticProps = async () => {
+  const data = await getJsonData();
+  return {
+    props: {
+      data: data,
+    },
+  };
 };
 
 export default Layout;
