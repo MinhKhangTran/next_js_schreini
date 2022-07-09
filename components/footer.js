@@ -36,6 +36,8 @@ const Footer = () => {
           <Link href="/">
             <a>
               <svg
+                aria-label="
+              logo von Schreini im footer"
                 width="134"
                 height="38"
                 viewBox="0 0 134 38"

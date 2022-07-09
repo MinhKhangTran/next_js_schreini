@@ -54,31 +54,27 @@ const ContactSm = ({ data }) => {
         validated={validated}
         onSubmit={handleSubmit}
       >
-        <div className="mb-3">
+        <Form.Group controlId="exampleInputName" className="mb-3">
           <Form.Label>Name</Form.Label>
           <Form.Control required type="text" placeholder="Name" />
           <Form.Control.Feedback type="invalid">
             Bitte einen Namen eingeben
           </Form.Control.Feedback>
-        </div>
-        <div className="mb-3">
-          <Form.Label htmlFor="exampleInputEmail1" className="form-label">
-            E-mail Adresse
-          </Form.Label>
+        </Form.Group>
+        <Form.Group controlId="exampleInputEmail" className="mb-3">
+          <Form.Label className="form-label">E-mail Adresse</Form.Label>
           <Form.Control required type="email" placeholder="E-Mail" />
           <Form.Control.Feedback type="invalid">
             Bitte eine E-Mail Adresse eingeben
           </Form.Control.Feedback>
-        </div>
-        <div className="mb-3">
-          <Form.Label htmlFor="exampleInputNachricht" className="form-label">
-            Nachricht
-          </Form.Label>
+        </Form.Group>
+        <Form.Group controlId="exampleInputNachricht" className="mb-3">
+          <Form.Label className="form-label">Nachricht</Form.Label>
           <Form.Control required as="textarea" rows={3} />
           <Form.Control.Feedback type="invalid">
             Bitte eine Nachricht eingeben
           </Form.Control.Feedback>
-        </div>
+        </Form.Group>
         <div className="d-grid | button__wrapper">
           <Button variant="primary" type="submit">
             Nachricht senden
