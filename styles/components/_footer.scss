@@ -7,7 +7,36 @@ footer {
   @include md {
     margin-top: math.div(104rem, 16);
   }
-  .buero__wrapper {
-    gap: 2rem;
+  .logo {
+    .footer__logo {
+      margin-bottom: 1rem;
+    }
+  }
+  .footer__nav {
+    padding-top: 1.5rem;
+    @include lg {
+      padding-top: 0;
+    }
+    h2 {
+      padding-bottom: 1rem;
+    }
+  }
+  .footer__buero {
+    padding-top: 1.5rem;
+    @include lg {
+      padding-top: 0;
+    }
+    h2 {
+      padding-bottom: 1rem;
+    }
+    .buero__wrapper {
+      gap: 2rem;
+    }
+  }
+  .footer__line {
+    margin-top: 4rem;
+    border-top: 1px $dark solid;
+    padding-top: 1rem;
+    font-size: 1rem;
   }
 }
