@@ -1,9 +1,9 @@
 @use "sass:math";
 
 #contact-sm {
-  margin-top: math.div(64rem, 16);
+  margin-block: math.div(64rem, 16);
   @include md {
-    margin-top: math.div(104rem, 16);
+    margin-block: math.div(104rem, 16);
   }
   .contact__row {
     padding-top: 2rem;

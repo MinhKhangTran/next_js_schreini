@@ -1,17 +1,20 @@
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
 
-const UnsereLeistungen = ({ data }) => {
+const UnsereLeistungen = ({ data, leistungen }) => {
+  console.log(leistungen);
   return (
     <section
       id="leistungen"
       aria-label="leistungen section"
-      className="wrapper"
+      className={`wrapper ${
+        leistungen === "/leistungen" ? "leistung__page--wrapper" : ""
+      }`}
     >
       <h2 className="heading-2 text-center text-primary | pb-2">
         Unsere Leistungen
       </h2>
-      <p className="text-center">
+      <p className="text-center leistungen__sub">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
         eirmod tempor.
       </p>

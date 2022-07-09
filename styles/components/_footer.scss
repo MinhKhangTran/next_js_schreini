@@ -2,11 +2,9 @@
 
 footer {
   background-color: #f2f2f2;
-  margin-top: math.div(64rem, 16);
+
   padding-block: 2rem 1rem;
-  @include md {
-    margin-top: math.div(104rem, 16);
-  }
+
   .logo {
     .footer__logo {
       margin-bottom: 1rem;

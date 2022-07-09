@@ -1,0 +1,14 @@
+@use "sass:math";
+
+#cta {
+  background-color: hsla(24, 95%, 64%, 0.7);
+  padding-block: math.div(64rem, 16);
+  margin-top: math.div(64rem, 16);
+  @include md {
+    padding-block: math.div(104rem, 16);
+    margin-top: math.div(104, 16);
+  }
+  p {
+    padding-block: 0.5rem 1rem;
+  }
+}
