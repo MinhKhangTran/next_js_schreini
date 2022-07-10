@@ -11,6 +11,10 @@
       margin-top: 0;
     }
   }
+  .heading-1,
+  .heading-2 {
+    padding-bottom: 1rem;
+  }
   .intro__section {
     padding-bottom: math.div(40rem, 16);
     border-bottom: 1px $light solid;

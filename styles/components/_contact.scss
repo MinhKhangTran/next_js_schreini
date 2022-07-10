@@ -13,8 +13,10 @@
 iframe {
   width: 100%;
   height: 350px;
-  margin-block: 2rem math.div(80rem, 16);
+  margin-block: 2rem math.div(32rem, 16);
+
   @include md {
     height: 600px;
+    margin-block: 2rem math.div(80rem, 16);
   }
 }
