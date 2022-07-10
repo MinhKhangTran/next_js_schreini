@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
 
 const UnsereLeistungen = ({ data, leistungen }) => {
-  console.log(leistungen);
   return (
     <section
       id="leistungen"

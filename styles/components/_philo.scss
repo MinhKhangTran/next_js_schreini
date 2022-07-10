@@ -1,0 +1,11 @@
+@use "sass:math";
+
+#philo {
+  margin-top: math.div(32rem, 16);
+  @include md {
+    margin-top: math.div(64rem, 16);
+  }
+  h1 {
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,20 @@
+@use "sass:math";
+
+#contact {
+  margin-top: math.div(32rem, 16);
+  @include md {
+    margin-top: math.div(64rem, 16);
+  }
+  .contact_sub {
+    width: 90%;
+    max-width: 590px;
+  }
+}
+iframe {
+  width: 100%;
+  height: 350px;
+  margin-block: 2rem math.div(80rem, 16);
+  @include md {
+    height: 600px;
+  }
+}

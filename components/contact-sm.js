@@ -1,7 +1,7 @@
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { useState } from "react";
 
-const ContactSm = ({ data }) => {
+const ContactSm = ({ data, contact }) => {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
@@ -17,15 +17,22 @@ const ContactSm = ({ data }) => {
     <section
       id="contact-sm"
       aria-label="Kontakt auf der Homepage Section"
-      className="wrapper"
+      className={`wrapper ${
+        contact === "/kontakt" ? "kontakt__page--wrapper" : ""
+      }`}
     >
-      <h2 className="text-primary text-center heading-2">
-        Kontaktieren Sie uns
-      </h2>
-      <p className="text-center">
-        Kommen Sie vorbei oder hinterlassen Sie uns eine Nachricht oder rufen
-        Sie uns an!
-      </p>
+      {contact !== "/kontakt" && (
+        <>
+          <h2 className="text-primary text-center heading-2">
+            Kontaktieren Sie uns
+          </h2>
+          <p className="text-center">
+            Kommen Sie vorbei oder hinterlassen Sie uns eine Nachricht oder
+            rufen Sie uns an!
+          </p>
+        </>
+      )}
+
       <Row className="contact__row">
         {data.map(({ id, icon, text }) => {
           return (

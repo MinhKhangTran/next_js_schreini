@@ -9,7 +9,11 @@ const Leistungen = ({ data }) => {
   return (
     <>
       <UnsereLeistungen data={data.leistungen} leistungen={router.pathname} />
-      <CTA />
+      <CTA
+        ctaHeading="Lassen Sie sich ausführlich beraten!"
+        ctaSub="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor. Lorem ipsum dolor sit amet."
+      />
     </>
   );
 };
