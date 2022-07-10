@@ -1,0 +1,36 @@
+@use "sass:math";
+
+#leistungspage {
+  margin-top: math.div(32rem, 16);
+  @include md {
+    margin-top: math.div(64rem, 16);
+  }
+  img {
+    margin-top: 1rem;
+    @include md {
+      margin-top: 0;
+    }
+  }
+  .intro__section {
+    padding-bottom: math.div(40rem, 16);
+    border-bottom: 1px $light solid;
+  }
+  .ueberblick__section {
+    padding-block: math.div(40rem, 16);
+
+    p {
+      padding-bottom: 1rem;
+    }
+  }
+  .vorteile__section {
+    border-top: 1px $light solid;
+    padding-block: math.div(40rem, 16);
+    border-bottom: 1px $light solid;
+    p {
+      padding-bottom: 1rem;
+    }
+  }
+  .faq__section {
+    padding-block: math.div(40rem, 16);
+  }
+}
